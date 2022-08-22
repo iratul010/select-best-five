@@ -12,7 +12,7 @@
   font-weight: 700;
   text-decoration: none;
   font-size: 4.4rem;
-  color: cornflowerblue;
+  color: #cf711f;
 }
 .logo {
   height: 2.2rem;
@@ -32,7 +32,7 @@
   font-size: 2.2rem;
 }
 .fa-solid:hover {
-  color: cornflowerblue;
+  color: #cf711f;
   transition: all 0.3s;
 }
 .main-nav-list li:nth-last-child(2) {
@@ -52,7 +52,7 @@
 
 .main-nav-link:hover,
 .main-nav-link:active {
-  color: cornflowerblue;
+  color: #cf711f;
 }
 
 .main-nav-link.nav-cta:link,
@@ -70,6 +70,7 @@
 
 .hero {
   max-width: 100%;
+  height: 50rem;
   margin: 0 auto;
   padding: 0 3.2rem;
   display: grid;
@@ -121,8 +122,27 @@
 }
 .player-img img {
   width: 100%;
+  height: 20rem;
 }
 .palyer-info {
   padding: 2.6rem 4.6rem;
   text-align: center;
+}
+.dot {
+  font-size: 4.8rem;
+}
+
+.budget {
+  background-color: #555;
+}
+.methods-info {
+  display: inline-block;
+  width: 100%;
+}
+.budget-input {
+  height: 40px;
+  margin-bottom: 2rem;
+}
+.summary__label {
+  margin-right: 2rem;
 }
