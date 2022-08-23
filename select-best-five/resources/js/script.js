@@ -1,7 +1,6 @@
 const players = document.querySelector(".players");
 const playerTotalCost = document.querySelector(".plExpenses");
 const btn = document.querySelector(".form-btn");
-
 const playersName = document.querySelector(".players-name");
 const calculator = document.querySelector(".clc");
 const quantityOne = document.querySelector("#quantity1");
@@ -9,9 +8,11 @@ const quantityTwo = document.querySelector("#quantity2");
 const quantityThree = document.querySelector("#quantity3");
 const total = document.querySelector("#total");
 const totalCalc = document.querySelector(".totalClc");
-let count = 1;
 const playerInfo = document.querySelector(".player-info");
-
+let count = 1;
+let arr = [];
+const playerCount = document.querySelector(".player-count");
+console.log(playerCount);
 const process = function () {
   players.addEventListener("click", function (e) {
     e.preventDefault();
@@ -19,8 +20,10 @@ const process = function () {
     if (count < 6) {
       if (e.target.classList.contains("btn")) {
         let name = e.target.closest(".player-info").childNodes[1].textContent;
-
-        const html = `<div class="player-name"><strong>${count}.</strong> ${name}</div>`;
+        arr.push(name);
+        console.log(arr.length);
+        console.log(arr);
+        const html = `<div class="player-name"><strong clss="player-count":>${arr.length}.</strong> ${name}</div>`;
         playersName.insertAdjacentHTML("beforeend", html);
         count += 1;
       }
@@ -60,9 +63,7 @@ const process = function () {
 process();
 
 function disable(x) {
-  console.log(x);
   if (count - 1 !== 5) {
-    console.log(count);
     x.setAttribute("style", "pointer-events:none;background-color:#b15a0e");
   }
   //for button
