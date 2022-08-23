@@ -56,7 +56,7 @@
                 <p class="hero-description">
                   <span>79</span> <strong>Goals</strong> <span class="dot">.</span> <span>100</span> <strong>Assist</strong>
                 </p>
-                <a id="id-1" class="btn btn--full" href="#">Select</a>
+                <a onclick="disable(this)" id="id-1" class="btn btn--full" href="#">Select</a>
               </div>
             </div>
             <!-- 2 -->
@@ -69,7 +69,7 @@
                 <p class="hero-description">
                   <span>283</span> <strong>Goals</strong> <span class="dot">.</span> <span>178</span> <strong>Assist</strong>
                 </p>
-                <a id="id-2" class="btn btn--full" href="#">Select</a>
+                <a onclick="disable(this)" id="id-2" class="btn btn--full" href="#">Select</a>
               </div>
             </div>
             <!-- 3 -->
@@ -82,7 +82,7 @@
                 <p class="hero-description">
                   <span>565</span> <strong>Goals</strong> <span class="dot">.</span> <span>231</span> <strong>Assist</strong>
                 </p>
-                <a id="id-3" class="btn btn--full" href="#">Select</a>
+                <a onclick="disable(this)" id="id-3" class="btn btn--full" href="#">Select</a>
               </div>
             </div>
             <!-- 4 -->
@@ -95,7 +95,7 @@
                 <p class="hero-description">
                   <span>173</span> <strong>Goals</strong> <span class="dot">.</span> <span>91</span> <strong>Assist</strong>
                 </p>
-                <a id="id-4" class="btn btn--full" href="#">Select</a>
+                <a onclick="disable(this)" id="id-4" class="btn btn--full" href="#">Select</a>
               </div>
             </div>
             <!-- 5 -->
@@ -108,7 +108,7 @@
                 <p class="hero-description">
                   <span>214</span> <strong>Goals</strong> <span class="dot">.</span> <span>116</span> <strong>Assist</strong>
                 </p>
-                <a id="5" class="btn btn--full" href="#">Select</a>
+                <a onclick="disable(this)" id="5" class="btn btn--full" href="#">Select</a>
               </div>
             </div>
             <!-- 6 -->
@@ -121,7 +121,7 @@
                 <p class="hero-description">
                   <span>175</span> <strong>Goals</strong> <span class="dot">.</span> <span>87</span> <strong>Assist</strong>
                 </p>
-                <a id="id-6" class="btn btn--full" href="#">Select</a>
+                <a onclick="disable(this)" id="id-6" class="btn btn--full" href="#">Select</a>
               </div>
             </div>
             <!-- 7 -->
@@ -134,7 +134,7 @@
                 <p class="hero-description">
                   <span>101</span> <strong>Goals</strong> <span class="dot">.</span> <span>40</span> <strong>Assist</strong>
                 </p>
-                <a id="id-7" class="btn btn--full" href="#">Select</a>
+                <a onclick="disable(this)" id="id-7" class="btn btn--full" href="#">Select</a>
               </div>
             </div>
             <!-- 8 -->
@@ -147,7 +147,7 @@
                 <p class="hero-description">
                   <span>51</span> <strong>Goals</strong> <span class="dot">.</span> <span>21</span> <strong>Assist</strong>
                 </p>
-                <a id="id-8" class="btn btn--full" href="#">Select</a>
+                <a onclick="disable(this)" id="id-8" class="btn btn--full" href="#">Select</a>
               </div>
             </div>
             <!-- 9 -->
@@ -160,7 +160,7 @@
                 <p class="hero-description">
                   <span>24</span> <strong>Goals</strong> <span class="dot">.</span> <span>22</span> <strong>Assist</strong>
                 </p>
-                <a id="id-9" class="btn btn--full" href="#">Select</a>
+                <a onclick="disable(this)" id="id-9" class="btn btn--full" href="#">Select</a>
               </div>
             </div>
             <!--  -->
@@ -180,29 +180,29 @@
               <div class="form grid--1-cols">
                 <div class="method method-grid">
                   <label class="hero-description" for="quantity1">Per Person </label>
-                  <input class="budget-input" type="number" id="quantity1" name="quantity1" min="500" value="1000" />
+                  <input class="budget-input" type="number" id="quantity1" name="quantity1" value="1000" />
                 </div>
                 <div class="method">
                   <a class="btn btn--full form-btn clc" href="#">Calculate</a>
                 </div>
                 <div class="method">
                   <label class="hero-description summary__label">Player Expenses </label>
-                  <label class="hero-description summary__value plExpenses">$520</label>
+                  <label class="hero-description summary__value plExpenses">$0</label>
                 </div>
                 <div class="method method-grid">
                   <label class="hero-description" for="quantity2">Manager </label>
-                  <input class="budget-input" type="number" id="quantity2" name="quantity2" min="500" value="1000" />
+                  <input class="budget-input" type="number" id="quantity2" name="quantity2" value="1000" />
                 </div>
                 <div class="method method-grid">
                   <label class="hero-description" for="quantity3">Coach </label>
-                  <input class="budget-input" type="number" id="quantity3" name="quantity3" min="500" value="1000" />
+                  <input class="budget-input" type="number" id="quantity3" name="quantity3" value="1000" />
                 </div>
                 <div class="method">
                   <a class="btn btn--full form-btn totalClc" href="#">Calculate Total</a>
                 </div>
                 <div class="method method-grid">
                   <label class="hero-description summary__label">Total </label>
-                  <label class="hero-description summary__value">$11520</label>
+                  <label class="hero-description summary__value" id="total">$0</label>
                 </div>
               </div>
             </div>
