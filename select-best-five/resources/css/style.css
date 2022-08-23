@@ -216,7 +216,7 @@
 }
 /* for-js */
 .players-name {
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
   height: 25rem;
 }
 .player-name {

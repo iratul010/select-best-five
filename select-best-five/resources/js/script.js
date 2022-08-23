@@ -9,10 +9,11 @@ const quantityThree = document.querySelector("#quantity3");
 const total = document.querySelector("#total");
 const totalCalc = document.querySelector(".totalClc");
 const playerInfo = document.querySelector(".player-info");
+const inputField = document.querySelector("#inputField");
 let count = 1;
 let arr = [];
-const playerCount = document.querySelector(".player-count");
-console.log(playerCount);
+let alt = 0;
+
 const process = function () {
   players.addEventListener("click", function (e) {
     e.preventDefault();
@@ -21,8 +22,6 @@ const process = function () {
       if (e.target.classList.contains("btn")) {
         let name = e.target.closest(".player-info").childNodes[1].textContent;
         arr.push(name);
-        console.log(arr.length);
-        console.log(arr);
         const html = `<div class="player-name"><strong clss="player-count":>${arr.length}.</strong> ${name}</div>`;
         playersName.insertAdjacentHTML("beforeend", html);
         count += 1;
@@ -31,8 +30,9 @@ const process = function () {
       art();
     }
   });
+
   let art = function () {
-    alert("Only 5 Players can select!");
+    alert(`Only ${count - 1} Players can select!`);
   };
 
   let playerCost = 0;
@@ -40,8 +40,14 @@ const process = function () {
   calculator.addEventListener("click", function (e) {
     e.preventDefault();
     --count;
-    playerCost = +quantityOne.value * count;
+    // if (typeof quantityOne.value === "number") {
+    //   playerCost = +quantityOne.value * count;
+    //   playerTotalCost.textContent = `$${playerCost}`;
+    // } else {
+    //   alert("Please work with Number!");
+    // }
 
+    playerCost = +quantityOne.value * count;
     playerTotalCost.textContent = `$${playerCost}`;
     quantityOne.value = "";
   });
