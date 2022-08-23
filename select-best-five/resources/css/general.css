@@ -15,7 +15,7 @@ body {
   font-family: "Rubik", sans-serif;
   line-height: 1;
   font-weight: 400;
-  color: #555;
+  color: #fff;
 }
 
 /**************************/
@@ -41,7 +41,7 @@ body {
   margin-bottom: 9.6rem;
 }
 .grid--1-cols {
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
 }
 .grid--2-cols {
   grid-template-columns: 3fr 1fr;
@@ -195,6 +195,9 @@ body {
 }
 
 /* HELPER/SETTINGS CLASSES */
+.margin-top-sm {
+  margin-top: 2.6rem !important;
+}
 .margin-right-sm {
   margin-right: 1.6rem !important;
 }
@@ -209,16 +212,4 @@ body {
 
 strong {
   font-weight: 500;
-}
-/* selecetd */
-.values {
-  text-align: center;
-}
-.selected {
-  padding: 2.6rem;
-  height: 300px;
-  background-color: #555;
-}
-button {
-  width: 50% !important;
 }
